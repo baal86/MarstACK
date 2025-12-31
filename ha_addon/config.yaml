@@ -14,7 +14,6 @@ ingress: false
 ports:
   80/tcp: 8000
 host_network: false
-image: ghcr.io/fignew/marstack:0.2.0
 options:
   log_level: info
 schema:
