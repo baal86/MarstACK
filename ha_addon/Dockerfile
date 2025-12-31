@@ -3,8 +3,8 @@ FROM python:3.12-alpine
 ENV LOG_LEVEL=info
 
 WORKDIR /code/app
-COPY ../requirements.txt /code/requirements.txt
-COPY ../app /code/app
+COPY ./requirements.txt /code/requirements.txt
+COPY ./app /code/app
 ENV PATH="/home/mack/.local/bin:${PATH}"
 
 RUN adduser --disabled-password --gecos "MarstACK" mack
